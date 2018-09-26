@@ -1,6 +1,6 @@
 export const options = {
   responsive: true,
-}
+};
 
 export const typeConfig = {
   'development': { color:"#F7464A",  highlight: "#FF5A5E", icon: 'fa fa-code' },
@@ -42,26 +42,20 @@ export const getLineData = tasks => {
     pointHighlightFill: "#fff",
     pointHighlightStroke: "rgba(151,187,205,1)",
     data: []
-    // data: [28, 48, 40, 19, 86, 27, 90]
   };
 
   for (let i = 0; i < tasks.length; i++) {
-    console.log(tasks[i])
     labels.push(convertTimeStampToDate(tasks[i].creationDate))
     series.data.push(tasks[i].duration)
   }
 
-  console.log(labels)
-  console.log(series.data)
   return {
     labels,
-    datasets: [
-      series
-    ]
+    datasets: [series ]
   }
-  // return getLineDataDefaults();
 };
 
+/*
 
 export const getLineDataDefaults = () => ({
   labels: ["January", "February", "March", "April", "May", "June", "July"],
@@ -79,7 +73,6 @@ export const getLineDataDefaults = () => ({
   ]
 });
 
-/*
 export const getPieDataDefaults = () => [
   {
     value: 300,

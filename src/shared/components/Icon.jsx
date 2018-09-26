@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { typeConfig } from "../features/tracking/components/charts/chart-utils";
+import { typeConfig } from "../../features/tracking/components/charts/chart-utils";
 
 export const Icon = props => {
   // console.log(props.type, typeConfig[props.type].icon)

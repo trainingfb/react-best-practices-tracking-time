@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import { NavBar } from "./shared/core/NavBar";
+import { NavBar } from "./core/NavBar";
 import { BrowserRouter, Route } from "react-router-dom";
-import TrackingContainer from "./shared/features/tracking/TrackingContainer";
+import TrackingContainer from "./features/tracking/TrackingContainer";
 
 class App extends Component {
   render() {

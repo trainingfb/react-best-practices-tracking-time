@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Activities from './components/activities/Activities';
 import AddActivity from './components/form-activity/AddActivity';
-import { Card } from "../../components/card";
+import { Card } from "../../shared/components/card";
 import { Charts } from "./components/charts/Charts";
 
 // Tracking View
