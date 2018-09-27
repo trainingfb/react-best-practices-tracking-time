@@ -30,12 +30,11 @@ export default class TrackingContainer extends React.Component {
     const { error, data } = await addTask(task);
     // add task to collection
     const tasks = [...this.state.tasks, data]
-    this.setState({ tasks, active: {...INITIAL_ACTIVE_STATE}, error })
+    this.setState({ tasks, active: INITIAL_ACTIVE_STATE, error })
   }
 
   async editActivity(task) {
     const { error, data } = await editTask(task);
-
     // update collection
     const tasks = this.state.tasks.map( el => {
       return el.id === data.id ? data : el
@@ -43,9 +42,9 @@ export default class TrackingContainer extends React.Component {
     // update state
     this.setState({ tasks, active: data, error });
   }
+
   async deleteTask(task) {
     const { error } = await deleteTask(task.id);
-
     // remove element from collection
     const tasks = this.state.tasks.filter(el => task.id !== el.id);
     // check if the deleted element was selected
@@ -59,7 +58,8 @@ export default class TrackingContainer extends React.Component {
   }
 
   reset() {
-    this.setState({active: INITIAL_ACTIVE_STATE })
+    console.log('rest')
+    this.setState({ active: {...INITIAL_ACTIVE_STATE }})
   }
 
   render() {

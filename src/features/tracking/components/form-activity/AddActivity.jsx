@@ -11,11 +11,18 @@ class AddActivity extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
+    console.log(this.props.active, prevProps.active, this.state.active, this.state.active === this.props.active)
     // Update only when active changes from parent
     const active = this.props.active;
+    // if (active !== prevProps.active || this.state.active === this.props.active) {
     if (active !== prevProps.active) {
       this.setState({ active })
     }
+    /*else {
+      if (!active.id) {
+        this.setState({})
+      }
+    }*/
   }
 
   onChange(event, field) {
@@ -23,6 +30,7 @@ class AddActivity extends React.Component {
       ...this.state.active,
       [field]: event.target.value
     };
+    console.log('...<', active)
     this.setState({ active })
   }
 
@@ -31,20 +39,27 @@ class AddActivity extends React.Component {
     this.props.onTaskSave(this.state.active);
   };
 
+  reset() {
+    this.props.onTaskReset();
+  }
+
+
   render() {
     const { active: { id, text, type = '', duration = 0} } = this.state;
-    const { onTaskReset } = this.props;
     const label = id ? 'EDIT' : 'ADD';
+    const valid = this.state.active.text ? true : false;
 
     return (
       <form
         onSubmit={(e) => this.submit(e)} noValidate
       >
-        <input type="text" name="text"
-               className="form-control mb-1"
-               placeholder="Activity Description"
-               value={text}
-               onChange={(e) => this.onChange(e, 'text')}
+        <input
+          type="text"
+          name="text"
+          className="form-control mb-1"
+          placeholder="Activity Description"
+          value={text}
+          onChange={(e) => this.onChange(e, 'text')}
         />
 
         <div className="row mb-1">
@@ -62,21 +77,24 @@ class AddActivity extends React.Component {
             </select>
           </div>
           <div className="col">
-            <input type="number" name="duration"
-                   className="form-control"
-                   placeholder="Duration (in minutes)"
-                   value={duration}
-                   onChange={(e) => this.onChange(e, 'duration')}
+            <input
+              type="number"
+              name="duration"
+              className="form-control"
+              placeholder="Duration (in minutes)"
+              value={duration}
+              onChange={(e) => this.onChange(e, 'duration')}
             />
           </div>
         </div>
 
-
-
         <div className="btn-group btn-group-sm mt-1">
-          <button type="submit" className="btn btn-warning">{label}</button>
-          <button type="button" className="btn btn-light"
-            onClick={() => onTaskReset()}>RESET</button>
+          {valid ? <button type="submit" className="btn btn-warning">{label}</button> : null }
+
+          <button
+            type="button"
+            className="btn btn-light"
+            onClick={() => this.reset()}>RESET</button>
         </div>
       </form>
     )

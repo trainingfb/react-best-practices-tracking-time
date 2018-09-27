@@ -28,8 +28,8 @@
           <file leaf-file-name="TrackingContainer.jsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/features/tracking/TrackingContainer.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="252">
-                  <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+                <state relative-caret-position="396">
+                  <caret line="61" column="32" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
                 </state>
               </provider>
             </entry>
@@ -38,20 +38,20 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="AddActivity.jsx" pinned="false" current-in-tab="false">
+          <file leaf-file-name="AddActivity.jsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/features/tracking/components/form-activity/AddActivity.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="364">
-                  <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+                <state relative-caret-position="407">
+                  <caret line="48" selection-start-line="48" selection-end-line="48" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="chart-utils.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="chart-utils.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/features/tracking/components/charts/chart-utils.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="392">
-                  <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+                <state relative-caret-position="308">
+                  <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
@@ -108,11 +108,11 @@
         <option value="$PROJECT_DIR$/src/features/tracking/TrackingView.jsx" />
         <option value="$PROJECT_DIR$/src/features/tracking/components/activities/Activities.jsx" />
         <option value="$PROJECT_DIR$/src/features/tracking/components/activities/ActivityItem.jsx" />
-        <option value="$PROJECT_DIR$/src/features/tracking/components/form-activity/AddActivity.jsx" />
         <option value="$PROJECT_DIR$/src/features/tracking/services/tracking.config.js" />
         <option value="$PROJECT_DIR$/src/features/tracking/components/charts/chart-utils.js" />
         <option value="$PROJECT_DIR$/src/shared/components/Icon.jsx" />
         <option value="$PROJECT_DIR$/src/features/tracking/TrackingContainer.jsx" />
+        <option value="$PROJECT_DIR$/src/features/tracking/components/form-activity/AddActivity.jsx" />
       </list>
     </option>
   </component>
@@ -449,13 +449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/features/tracking/components/form-activity/AddActivity.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/features/tracking/services/tracking.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -479,15 +472,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/features/tracking/components/charts/chart-utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        <state relative-caret-position="308">
+          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/features/tracking/TrackingContainer.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="396">
+          <caret line="61" column="32" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/features/tracking/components/form-activity/AddActivity.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
         </state>
       </provider>
     </entry>
