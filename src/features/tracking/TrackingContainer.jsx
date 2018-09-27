@@ -42,14 +42,14 @@ export default class TrackingContainer extends React.Component {
     this.setState({ list, active: data, error });
   }
   async deleteActivity(task) {
-    const { error, data } = await deleteTask(task.id);
+    const { error } = await deleteTask(task.id);
 
     // remove element from collection
     const list = this.state.list.filter(el => task.id !== el.id);
     // check if the deleted element was selected
     const active = task.id === this.state.active.id ? INITIAL_STATE_ACTIVE : this.state.active;
     // update state
-    this.setState({ list, active })
+    this.setState({ list, active, error })
   }
 
   selectItem(item) {

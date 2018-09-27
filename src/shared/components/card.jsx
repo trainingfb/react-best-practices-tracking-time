@@ -1,13 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import * as classnames from 'classnames';
 
 export const Card = props => {
   const header = props.title ? (<div className="card-header">
     {props.title}
   </div>) : null;
-
-  const cardCls = `card bg-dark text-white mb-3 col-${props.col}`;
 
   return (
     <div className="card bg-dark text-white mb-3 ">

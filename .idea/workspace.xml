@@ -16,11 +16,29 @@
     <splitter split-orientation="horizontal" split-proportion="0.59285295">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/index.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="280">
-                  <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+                <state relative-caret-position="504">
+                  <caret line="18" column="75" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TrackingContainer.jsx" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/features/tracking/TrackingContainer.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="554">
+                  <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="card.jsx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/shared/components/card.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="168">
+                  <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
@@ -47,20 +65,20 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ActivityItem.jsx" pinned="false" current-in-tab="false">
+          <file leaf-file-name="ActivityItem.jsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/features/tracking/components/activities/ActivityItem.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="504">
-                  <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+                <state relative-caret-position="420">
+                  <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="chart-utils.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="chart-utils.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/features/tracking/components/charts/chart-utils.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="194">
-                  <caret line="7" column="73" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
+                <state relative-caret-position="547">
+                  <caret line="34" selection-start-line="34" selection-end-line="34" />
                 </state>
               </provider>
             </entry>
@@ -90,7 +108,6 @@
         <option value="$PROJECT_DIR$/src/shared/features/tracking/components/TrackingView.jsx" />
         <option value="$PROJECT_DIR$/src/shared/features/tracking/components/Activities.jsx" />
         <option value="$PROJECT_DIR$/src/shared/features/tracking/components/AddActivity.jsx" />
-        <option value="$PROJECT_DIR$/src/shared/components/card.jsx" />
         <option value="$PROJECT_DIR$/src/shared/features/tracking/components/form-activity/AddActivity.jsx" />
         <option value="$PROJECT_DIR$/src/shared/features/tracking/components/activities/Activities.jsx" />
         <option value="$PROJECT_DIR$/server/db.json" />
@@ -105,8 +122,11 @@
         <option value="$PROJECT_DIR$/src/features/tracking/components/form-activity/AddActivity.jsx" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/shared/components/Icon.jsx" />
-        <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/features/tracking/components/charts/chart-utils.js" />
+        <option value="$PROJECT_DIR$/src/shared/components/card.jsx" />
+        <option value="$PROJECT_DIR$/src/index.css" />
+        <option value="$PROJECT_DIR$/src/features/tracking/components/activities/ActivityItem.jsx" />
+        <option value="$PROJECT_DIR$/src/features/tracking/TrackingContainer.jsx" />
       </list>
     </option>
   </component>
@@ -178,7 +198,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="hartut&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/features/tracking/components/charts/chart-utils.js&#10;icon&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/shared/components/Icon.jsx&#10;navbar&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/shared/core/NavBar.js&#10;app&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/App.css&#10;db&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/server/db.json&#10;pac&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/package.json&#10;index&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/index.js&#10;index.&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/index.js&#10;packa&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/package.json" />
+    <property name="SearchEverywhereHistoryKey" value="tracki&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/features/tracking/TrackingContainer.jsx&#10;trackingo&#9;null&#9;null&#10;ard&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/shared/components/card.jsx&#10;hartut&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/features/tracking/components/charts/chart-utils.js&#10;icon&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/shared/components/Icon.jsx&#10;navbar&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/shared/core/NavBar.js&#10;app&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/App.css&#10;db&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/server/db.json&#10;pac&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/package.json&#10;index&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/index.js&#10;index.&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/index.js&#10;packa&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/package.json" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="$USER_HOME$/.nvm/versions/node/v6.3.0/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -227,14 +247,14 @@
     <frame x="-3440" y="-1057" width="3440" height="1367" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.49900398" visible="true" weight="0.06707674" />
+      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.4979592" visible="true" weight="0.06707674" />
       <window_info anchor="bottom" id="TODO" order="9" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="5" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
-      <window_info id="npm" order="0" sideWeight="0.500996" side_tool="true" weight="0.12097247" />
+      <window_info id="npm" order="0" sideWeight="0.5020408" side_tool="true" weight="0.06707674" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.2153723" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.2153723" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -325,13 +345,6 @@
     <entry file="file://$PROJECT_DIR$/src/features/tracking/components/activities/Activities.test.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/features/tracking/components/activities/ActivityItem.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/features/tracking/components/activities/Activities.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
@@ -388,24 +401,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/features/tracking/TrackingContainer.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/NavBar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="79">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shared/components/card.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -426,17 +425,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.css">
+    <entry file="file://$PROJECT_DIR$/src/features/tracking/components/charts/chart-utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="547">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/features/tracking/components/charts/chart-utils.js">
+    <entry file="file://$PROJECT_DIR$/src/shared/components/card.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="7" column="73" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
+        <state relative-caret-position="168">
+          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/features/tracking/components/activities/ActivityItem.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="18" column="75" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/features/tracking/TrackingContainer.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
         </state>
       </provider>
     </entry>

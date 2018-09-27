@@ -32,7 +32,6 @@ export const getPieData = tasks => {
 export const getLineData = tasks => {
 
   const labels = [];
-  const data = {};
   const series = {
     label: "My Second dataset",
     fillColor: "rgba(151,187,205,0.2)",

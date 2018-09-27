@@ -41,13 +41,6 @@
       "duration": "50",
       "type": "meeting",
       "id": 8
-    },
-    {
-      "text": "Another one",
-      "creationDate": 1538004305371,
-      "duration": 0,
-      "type": "",
-      "id": 9
     }
   ]
 }

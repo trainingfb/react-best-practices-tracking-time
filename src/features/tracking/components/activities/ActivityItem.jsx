@@ -13,7 +13,7 @@ export const ActivityItem = (props) => {
 
   const deleteTask = (event) => {
     event.stopPropagation();
-    props.onDelete();
+    onDelete();
   };
 
   return (
