@@ -5,7 +5,6 @@ class AddActivity extends React.Component {
 
   constructor(props) {
     super(props);
-    // populate form when initialized
     this.state = {
       active: {...props.active}
     }

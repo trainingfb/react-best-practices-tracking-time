@@ -15,7 +15,7 @@ export const convertTimeStampToDate = ms => {
 }
 
 /**
- * Get an array of task and generate an object for PieChart chartJS
+ * Receive an array of task and generate an object for PieChart chartJS
  * @param data
  * @returns {any[]}
  */
@@ -29,6 +29,12 @@ export const getPieData = tasks => {
   return Object.values(extract)
 };
 
+
+/**
+ * Receive an array of task and generate an object for LineChart chartJS
+ * @param tasks
+ * @returns {{labels: Array, datasets: *[]}}
+ */
 export const getLineData = tasks => {
 
   const labels = [];
