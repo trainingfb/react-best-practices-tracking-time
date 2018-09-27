@@ -1,6 +1,6 @@
 import * as React from "react";
 import TrackingView from './TrackingView';
-import { addTask, deleteTask, editTask, getAll } from "./services/tracking.service";
+import { addTask, deleteTask, editTask, getAllTasks } from "./services/tracking.service";
 
 export const INITIAL_ACTIVE_STATE = {
   text: '', creationDate: null, duration: 0, type: ''
@@ -14,26 +14,39 @@ export default class TrackingContainer extends React.Component {
   }
 
   async componentDidMount() {
-    const { error, data } = await getAll();
+    const { error, data } = await getAllTasks();
     this.setState({ tasks: data, error });
   }
 
+  /**
+   * Save Task (add / edit)
+   * @param item
+   */
   saveTask(item) {
     if (item.id) {
-      this.editActivity(item)
+      this.editTask(item)
     } else {
-      this.addActivity(item)
+      this.addTask(item)
     }
   }
 
-  async addActivity(task) {
+  /**
+   * Add new Task
+   * @param task
+   * @returns {Promise<void>}
+   */
+  async addTask(task) {
     const { error, data } = await addTask(task);
-    // add task to collection
     const tasks = [...this.state.tasks, data]
     this.setState({ tasks, active: INITIAL_ACTIVE_STATE, error })
   }
 
-  async editActivity(task) {
+  /**
+   * Edit task
+   * @param task
+   * @returns {Promise<void>}
+   */
+  async editTask(task) {
     const { error, data } = await editTask(task);
     // update collection
     const tasks = this.state.tasks.map( el => {
@@ -43,6 +56,11 @@ export default class TrackingContainer extends React.Component {
     this.setState({ tasks, active: data, error });
   }
 
+  /**
+   * Delete task
+   * @param task
+   * @returns {Promise<void>}
+   */
   async deleteTask(task) {
     const { error } = await deleteTask(task.id);
     // remove element from collection
@@ -53,12 +71,18 @@ export default class TrackingContainer extends React.Component {
     this.setState({ tasks, active, error })
   }
 
+  /**
+   * Set Active Task
+   * @param item
+   */
   setActive(item) {
     this.setState({ active: item })
   }
 
+  /**
+   * Reset Form
+   */
   reset() {
-    console.log('rest')
     this.setState({ active: {...INITIAL_ACTIVE_STATE }})
   }
 

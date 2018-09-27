@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Loadable from 'react-loadable';
 import { BrowserRouter, Redirect, Route } from "react-router-dom";
 
-import { NavBar } from "./core/NavBar";
+import { NavBar } from "./core/components/NavBar";
 
 const Loading = () => <div>Loading...</div>;
 
