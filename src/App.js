@@ -1,8 +1,21 @@
-import React, { Component } from 'react';
 import './App.css';
-import { NavBar } from "./core/NavBar";
+import React, { Component } from 'react';
+import Loadable from 'react-loadable';
 import { BrowserRouter, Redirect, Route } from "react-router-dom";
-import TrackingContainer from "./features/tracking/TrackingContainer";
+
+import { NavBar } from "./core/NavBar";
+
+const Loading = () => <div>Loading...</div>;
+
+const Welcome = Loadable({
+  loader: () => import('./features/welcome/WelcomeContainer'),
+  loading: Loading,
+});
+
+const Tracking = Loadable({
+  loader: () => import('./features/tracking/TrackingContainer'),
+  loading: Loading,
+});
 
 class App extends Component {
   render() {
@@ -11,9 +24,10 @@ class App extends Component {
         <div>
           <NavBar />
           <div className="container">
-            <Route exact path="/tracking" component={TrackingContainer} />
+            <Route exact path="/welcome" component={Welcome} />
+            <Route exact path="/tracking" component={Tracking} />
             <Route exact path='' render={() => {
-              return <Redirect exact from='/' to='/tracking'/>
+              return <Redirect exact from='/' to='/welcome'/>
             }} />
 
           </div>
