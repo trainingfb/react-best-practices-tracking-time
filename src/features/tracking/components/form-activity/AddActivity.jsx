@@ -11,18 +11,12 @@ class AddActivity extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    console.log(this.props.active, prevProps.active, this.state.active, this.state.active === this.props.active)
     // Update only when active changes from parent
     const active = this.props.active;
     // if (active !== prevProps.active || this.state.active === this.props.active) {
     if (active !== prevProps.active) {
       this.setState({ active })
     }
-    /*else {
-      if (!active.id) {
-        this.setState({})
-      }
-    }*/
   }
 
   onChange(event, field) {
@@ -30,7 +24,6 @@ class AddActivity extends React.Component {
       ...this.state.active,
       [field]: event.target.value
     };
-    console.log('...<', active)
     this.setState({ active })
   }
 
