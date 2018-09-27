@@ -2,19 +2,15 @@ import * as React from "react";
 import TrackingView from './TrackingView';
 import { addTask, deleteTask, editTask, getAll } from "./services/tracking.service";
 
-export const INITIAL_STATE = {
-  active: {
-    text: '', creationDate: null, duration: 0, type: ''
-  },
-  tasks: [],
-  error: null
+export const INITIAL_ACTIVE_STATE = {
+  text: '', creationDate: null, duration: 0, type: ''
 };
 
 export default class TrackingContainer extends React.Component {
 
   constructor() {
     super();
-    this.state = { ...INITIAL_STATE } ;
+    this.state = { active: INITIAL_ACTIVE_STATE, tasks: [], error: null } ;
   }
 
   async componentDidMount() {
@@ -34,7 +30,7 @@ export default class TrackingContainer extends React.Component {
     const { error, data } = await addTask(task);
     // add task to collection
     const tasks = [...this.state.tasks, data]
-    this.setState({ tasks, active: {...INITIAL_STATE}, error })
+    this.setState({ tasks, active: {...INITIAL_ACTIVE_STATE}, error })
   }
 
   async editActivity(task) {
@@ -53,7 +49,7 @@ export default class TrackingContainer extends React.Component {
     // remove element from collection
     const tasks = this.state.tasks.filter(el => task.id !== el.id);
     // check if the deleted element was selected
-    const active = task.id === this.state.active.id ? INITIAL_STATE : this.state.active;
+    const active = task.id === this.state.active.id ? INITIAL_ACTIVE_STATE : this.state.active;
     // update state
     this.setState({ tasks, active, error })
   }
@@ -63,7 +59,7 @@ export default class TrackingContainer extends React.Component {
   }
 
   reset() {
-    this.setState({active: INITIAL_STATE })
+    this.setState({active: INITIAL_ACTIVE_STATE })
   }
 
   render() {
