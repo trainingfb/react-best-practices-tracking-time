@@ -12,8 +12,10 @@ class App extends Component {
           <NavBar />
           <div className="container">
             <Route exact path="/tracking" component={TrackingContainer} />
-            <Redirect from='/' to='/tracking'/>
-            <Redirect from='**' to='/tracking'/>
+            <Route exact path='' render={() => {
+              return <Redirect exact from='/' to='/tracking'/>
+            }} />
+
           </div>
         </div>
       </BrowserRouter>
