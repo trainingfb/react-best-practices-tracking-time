@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { typeConfig } from "../../features/tracking/components/charts/chart-utils";
+import { taskConfig } from "../../features/tracking/services/tracking.config";
 
 export const Icon = props => {
-  // console.log(props.type, typeConfig[props.type].icon)
-  const icon = typeConfig[props.type] ? typeConfig[props.type].icon : null;
+  const icon = taskConfig[props.type] ? taskConfig[props.type].icon : null;
   return (
     <i className={icon} />
   )

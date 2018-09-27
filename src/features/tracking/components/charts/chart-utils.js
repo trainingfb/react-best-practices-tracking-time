@@ -1,12 +1,7 @@
+import { taskConfig } from "../../services/tracking.config";
+
 export const options = {
   responsive: true,
-};
-
-export const typeConfig = {
-  'development': { color:"#F7464A",  highlight: "#FF5A5E", icon: 'fa fa-code' },
-  'study': { color:"#46BFBD",  highlight: "#5AD3D1", icon: 'fa fa-book'  },
-  'meeting': { color:"#FDB45C",  highlight: "#FFC870", icon: 'fa fa-users'  },
-  'undefined': { color:"#FDB45C",  highlight: "#FFC870", icon: null},
 };
 
 export const convertTimeStampToDate = ms => {
@@ -24,7 +19,7 @@ export const getPieData = tasks => {
   for (let i = 0; i < tasks.length; i++) {
     let label = tasks[i].type || 'not assigned';
     let value = extract[label] ? extract[label].value += 1 : 1;
-    extract[label] = { label, value, ...typeConfig[label] }
+    extract[label] = { label, value, ...taskConfig[label] }
   }
   return Object.values(extract)
 };
