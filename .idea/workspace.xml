@@ -15,43 +15,26 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.43830454">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.5">
-          <split-first>
-            <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-              <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/index.css">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="504">
-                      <caret line="18" column="75" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="TrackingContainer.jsx" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/src/features/tracking/TrackingContainer.jsx">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="532">
-                      <caret line="72" column="12" lean-forward="true" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="23" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-first>
-          <split-second>
-            <leaf>
-              <file leaf-file-name="TrackingView.jsx" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/src/features/tracking/TrackingView.jsx">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="307">
-                      <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-second>
-        </splitter>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+          <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/index.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="504">
+                  <caret line="18" column="75" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TrackingContainer.jsx" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/features/tracking/TrackingContainer.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="448">
+                  <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
@@ -64,20 +47,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="chart-utils.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="chart-utils.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/features/tracking/components/charts/chart-utils.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="476">
                   <caret line="19" column="43" lean-forward="true" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Icon.jsx" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/shared/components/Icon.jsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="140">
-                  <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
                 </state>
               </provider>
             </entry>
@@ -131,7 +105,6 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/shared/components/card.jsx" />
         <option value="$PROJECT_DIR$/src/index.css" />
-        <option value="$PROJECT_DIR$/src/features/tracking/TrackingContainer.jsx" />
         <option value="$PROJECT_DIR$/src/features/tracking/TrackingView.jsx" />
         <option value="$PROJECT_DIR$/src/features/tracking/components/activities/Activities.jsx" />
         <option value="$PROJECT_DIR$/src/features/tracking/components/activities/ActivityItem.jsx" />
@@ -139,6 +112,7 @@
         <option value="$PROJECT_DIR$/src/features/tracking/services/tracking.config.js" />
         <option value="$PROJECT_DIR$/src/features/tracking/components/charts/chart-utils.js" />
         <option value="$PROJECT_DIR$/src/shared/components/Icon.jsx" />
+        <option value="$PROJECT_DIR$/src/features/tracking/TrackingContainer.jsx" />
       </list>
     </option>
   </component>
@@ -297,14 +271,14 @@
     <frame x="-3440" y="-1057" width="3440" height="1367" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.4979592" visible="true" weight="0.06707674" />
+      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.4979592" visible="true" weight="0.06707674" />
       <window_info anchor="bottom" id="TODO" order="9" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="5" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info id="npm" order="0" sideWeight="0.5020408" side_tool="true" weight="0.06707674" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.2810248" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.2810248" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -461,13 +435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/features/tracking/TrackingContainer.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="72" column="12" lean-forward="true" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/features/tracking/components/activities/ActivityItem.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -489,17 +456,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/features/tracking/TrackingView.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/features/tracking/services/tracking.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/features/tracking/TrackingView.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/components/Icon.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -510,10 +484,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shared/components/Icon.jsx">
+    <entry file="file://$PROJECT_DIR$/src/features/tracking/TrackingContainer.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+        <state relative-caret-position="448">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
         </state>
       </provider>
     </entry>
