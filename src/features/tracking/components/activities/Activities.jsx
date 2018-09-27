@@ -5,26 +5,26 @@ import { ActivityItem } from "./ActivityItem";
 const Activities = props => {
   const { active: { id } } = props;
 
-  const deleteItem = (item) =>  {
-    props.onDelete(item)
+  const deleteItem = (task) =>  {
+    props.onTaskDelete(task)
   };
 
   return (<div>
-    {props.list.map(item => {
+    {props.tasks.map(task => {
 
 
       return (
           <ActivityItem
-            key={item.id}
-            task={item}
-            onItemClick={(event) => props.onItemClick(item)}
-            onDelete={() => deleteItem(item)}
-            selected={id === item.id}
+            key={task.id}
+            task={task}
+            onTaskSetActive={(event) => props.onTaskSetActive(task)}
+            onTaskDelete={() => deleteItem(task)}
+            selected={id === task.id}
           >
-            {item.text} ( {item.id} )
+            {task.text} ( {task.id} )
 
             <i className="fa fa-trash icon pull-right"
-               onClick={(event) => deleteItem(event, item)} />
+               onClick={(event) => deleteItem(event, task)} />
           </ActivityItem>
       )
     })}
@@ -40,12 +40,12 @@ Activities.propTypes = {
     creationDate: PropTypes.number,
     type: PropTypes.string
   }),
-  list: PropTypes.arrayOf(PropTypes.shape({
+  tasks: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.number,
     text: PropTypes.string,
     creationDate: PropTypes.number,
     type: PropTypes.string
   })),
-  onDelete: PropTypes.func,
-  onItemClick: PropTypes.func
+  onTaskDelete: PropTypes.func,
+  onTaskSetActive: PropTypes.func
 };

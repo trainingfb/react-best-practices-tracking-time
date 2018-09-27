@@ -18,7 +18,7 @@ const TrackingView = props =>(<div className="row">
     </Card>
   </div>
   <div className="col-sm-5">
-    <Charts data={props.list} />
+    <Charts data={props.tasks} />
   </div>
 </div>);
 
@@ -31,7 +31,7 @@ TrackingView.propTypes = {
     date: PropTypes.string,
     time: PropTypes.number
   }),
-  list: PropTypes.arrayOf(
+  tasks: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number,
       text: PropTypes.string,
@@ -39,8 +39,8 @@ TrackingView.propTypes = {
       time: PropTypes.number
     }).isRequired
   ),
-  onSaveActivity: PropTypes.func.isRequired,
-  onDelete: PropTypes.func.isRequired,
-  onItemClick: PropTypes.func,
-  onResetActive: PropTypes.func
+  onTaskSave: PropTypes.func.isRequired,
+  onTaskDelete: PropTypes.func.isRequired,
+  onTaskSetActive: PropTypes.func,
+  onTaskReset: PropTypes.func
 };

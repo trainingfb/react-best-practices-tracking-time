@@ -29,12 +29,12 @@ class AddActivity extends React.Component {
 
   submit(e) {
     e.preventDefault();
-    this.props.onSaveActivity(this.state.active);
+    this.props.onTaskSave(this.state.active);
   };
 
   render() {
     const { active: { id, text, type = '', duration = 0} } = this.state;
-    const { onResetActive } = this.props;
+    const { onTaskReset } = this.props;
     const label = id ? 'EDIT' : 'ADD';
 
     return (
@@ -77,7 +77,7 @@ class AddActivity extends React.Component {
         <div className="btn-group btn-group-sm mt-1">
           <button type="submit" className="btn btn-warning">{label}</button>
           <button type="button" className="btn btn-light"
-            onClick={() => onResetActive()}>RESET</button>
+            onClick={() => onTaskReset()}>RESET</button>
         </div>
       </form>
     )
@@ -93,8 +93,8 @@ AddActivity.propTypes = {
     creationDate: PropTypes.number,
     type: PropTypes.string
   }),
-  onSaveActivity: PropTypes.func.isRequired,
-  onResetActive: PropTypes.func
+  onTaskSave: PropTypes.func.isRequired,
+  onTaskReset: PropTypes.func
 };
 
 AddActivity.defaultProps = {
