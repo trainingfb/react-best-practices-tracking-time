@@ -1,5 +1,5 @@
-import { config } from '../../../core/services/config.service';
-const { headers, url } = config;
+import { appSettings } from '../../../core/services';
+const { headers, url } = appSettings;
 
 /**
  * Get all tasks

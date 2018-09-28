@@ -1,4 +1,6 @@
-import { taskConfig } from "../../services/tracking.config";
+// import { taskConfig } from "../../services/tracking.appSettings";
+
+import { taskConfig } from "../../services";
 
 export const options = {
   responsive: true,

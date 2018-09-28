@@ -1,6 +1,6 @@
 import * as React from "react";
 import TrackingView from './TrackingView';
-import { addTask, deleteTask, editTask, getAllTasks } from "./services/tracking.service";
+import { addTask, deleteTask, editTask, getAllTasks } from "./services";
 
 export const INITIAL_ACTIVE_STATE = {
   text: '', creationDate: null, duration: 0, type: ''

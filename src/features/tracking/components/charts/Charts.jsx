@@ -3,7 +3,7 @@ import { getLineData, getPieData, options } from "./chart-utils";
 const PieChart = require("react-chartjs").Pie;
 const LineChart = require("react-chartjs").Line;
 
-export const Charts = props => {
+const Charts = props => {
 
   // generate chart data
   const lineData = getLineData(props.data);
@@ -19,3 +19,4 @@ export const Charts = props => {
     </div>
   )
 }
+export default Charts;

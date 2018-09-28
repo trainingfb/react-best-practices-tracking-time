@@ -28,3 +28,6 @@ NOTE:
 * remember that setState is asynchronous
 * Duck / use index.js files
 https://medium.freecodecamp.org/scaling-your-redux-app-with-ducks-6115955638be
+
+# PROJECT ORGANIZATION
+* organize your files by feature. Avoid by functions

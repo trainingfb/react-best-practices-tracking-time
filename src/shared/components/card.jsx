@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const Card = props => {
+const Card = props => {
   const header = props.title ? (<div className="card-header">
     {props.title}
   </div>) : null;
@@ -26,3 +26,4 @@ Card.defaultProps = {
   col: 12
 };
 
+export default Card;

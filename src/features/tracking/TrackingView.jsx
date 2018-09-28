@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 // feature components
-import Activities from './components/activities/Activities';
-import AddActivity from './components/form-activity/AddActivity';
+import { AddActivity } from "./components/form-activity";
+import { Activities } from "./components/activities";
+import { Charts } from "./components/charts";
 // shared
-import { Card } from "../../shared/components/card";
-import { Charts } from "./components/charts/Charts";
+import { Card } from "../../shared/components";
 
 // Tracking View
 const TrackingView = props =>(<div className="row">

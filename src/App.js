@@ -1,11 +1,10 @@
 import './App.css';
 import React, { Component } from 'react';
-import Loadable from 'react-loadable';
 import { BrowserRouter, Redirect, Route } from "react-router-dom";
+import Loadable from 'react-loadable';
 
-import { NavBar } from "./core/components/NavBar";
-
-const Loading = () => <div>Loading...</div>;
+import { NavBar } from "./core/components";
+import { Loading } from "./shared/components";
 
 const Welcome = Loadable({
   loader: () => import('./features/welcome/WelcomeContainer'),

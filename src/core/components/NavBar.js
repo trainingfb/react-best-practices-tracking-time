@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import NavLink from "react-router-dom/es/NavLink";
 
-export const NavBar = () => {
+const NavBar = () => {
   return (
     <nav className="navbar navbar-expand navbar-dark bg-dark text-white mb-2">
       <NavLink className="navbar-brand"
@@ -28,3 +28,4 @@ NavBar.propTypes = {
   setConfig: PropTypes.func
 };
 
+export default NavBar;
