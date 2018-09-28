@@ -12,6 +12,7 @@ BEST PRACTICES
 * Separate your business logic from UI and interaction logic
 * Write functional component
 * Increase performance with Pure Components and shouldComponentUpdate()
+* Add index.js files to identify public interfaces
 * Use an immutable state
 * Use a state manager, such as Redux or Mobx State Tree
 * Check your properties with PropTypes validation
@@ -24,10 +25,51 @@ BEST PRACTICES
 * Avoid Refs when possible
 * CSS: inline, styled or external CSS? Use what you prefer : )
 
-NOTE:
+NOTES:
 * remember that setState is asynchronous
-* Duck / use index.js files
-https://medium.freecodecamp.org/scaling-your-redux-app-with-ducks-6115955638be
 
 # PROJECT ORGANIZATION
-* organize your files by feature. Avoid by functions
+* organize your files by feature. Avoid organization by functions
+* Use Ducks File Structure
+    * [Ducks: Redux Reducer Bundles](https://github.com/erikras/ducks-modular-redux)
+    * [Scaling your Redux App with ducks](https://medium.freecodecamp.org/scaling-your-redux-app-with-ducks-6115955638be)
+    * [The Ducks File Structure for Redux](https://medium.com/@scbarrus/the-ducks-file-structure-for-redux-d63c41b7035c)
+
+
+WRONG:
+
+-- 📁 components
+    -- 📄 Card.jsx
+    -- 📄 Catalog.jsx
+    -- 📄 NavBar.jsx
+    -- 📄 Users.jsx
+-- 📁 services
+-- 📁 containers
+-- 📁 actions
+-- 📁 reducers
+
+
+GOOD:
+
+-- 📁 core
+    -- 📁 components
+        -- 📄 NavBar.jsx
+    -- 📁 services
+        -- 📄 app.settings.js
+-- 📁 features
+    -- 📁 users
+        -- 📁 actions
+        -- 📁 components
+        -- 📁 containers
+        -- 📁 reducers
+        -- 📁 selectors
+    -- 📁 catalog
+        -- 📁 actions
+        -- 📁 components
+        -- 📁 containers
+        -- 📁 reducers
+        -- 📁 selectors
+-- 📁 shared
+    -- 📁 components
+    -- 📁 services
+
