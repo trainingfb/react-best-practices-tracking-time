@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+// feature components
 import Activities from './components/activities/Activities';
 import AddActivity from './components/form-activity/AddActivity';
+// shared
 import { Card } from "../../shared/components/card";
 import { Charts } from "./components/charts/Charts";
 

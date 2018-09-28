@@ -26,10 +26,13 @@ export const ActivityItem = (props) => {
         onClick={onTaskSetActive}
         className={cls}
     >
+      {/*Task Icon + Label*/}
       <Icon type={type} /> {text}
 
       <div className="pull-right">
+        {/*Duration*/}
         { duration ? <span>{duration}m </span> : 'no time '}
+        {/*Delete Icon*/}
         <i className="fa fa-trash icon" onClick={(event) => deleteTask(event)} />
       </div>
     </li>

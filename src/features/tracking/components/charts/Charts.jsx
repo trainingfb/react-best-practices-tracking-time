@@ -5,6 +5,7 @@ const LineChart = require("react-chartjs").Line;
 
 export const Charts = props => {
 
+  // generate chart data
   const lineData = getLineData(props.data);
   const pieData = getPieData(props.data);
 
@@ -14,7 +15,7 @@ export const Charts = props => {
       <LineChart height="200" data={lineData} options={options}/>
       <hr/>
       <h4>Task Amount</h4>
-      <PieChart height="300" data={pieData} options={options}/>
+      <PieChart height="200" data={pieData} options={options}/>
     </div>
   )
 }

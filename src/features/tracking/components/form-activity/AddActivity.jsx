@@ -13,12 +13,16 @@ class AddActivity extends React.Component {
   componentDidUpdate(prevProps) {
     // Update only when active changes from parent
     const active = this.props.active;
-    // if (active !== prevProps.active || this.state.active === this.props.active) {
     if (active !== prevProps.active) {
       this.setState({ active })
     }
   }
 
+  /**
+   * OnChange Control
+   * @param event KeyboardEvent
+   * @param field String
+   */
   onChange(event, field) {
     const active = {
       ...this.state.active,
@@ -27,15 +31,21 @@ class AddActivity extends React.Component {
     this.setState({ active })
   }
 
+  /**
+   * Submit Form
+   * @param e MouseEvent
+   */
   submit(e) {
     e.preventDefault();
     this.props.onTaskSave(this.state.active);
   };
 
+  /**
+   * Reset Form
+   */
   reset() {
     this.props.onTaskReset();
   }
-
 
   render() {
     const { active: { id, text, type = '', duration = 0} } = this.state;
@@ -44,7 +54,8 @@ class AddActivity extends React.Component {
 
     return (
       <form
-        onSubmit={(e) => this.submit(e)} noValidate
+        noValidate
+        onSubmit={(e) => this.submit(e)}
       >
         <input
           type="text"
@@ -82,12 +93,18 @@ class AddActivity extends React.Component {
         </div>
 
         <div className="btn-group btn-group-sm mt-1">
-          {valid ? <button type="submit" className="btn btn-warning">{label}</button> : null }
+          {
+            valid ?
+              <button type="submit" className="btn btn-warning">
+                {label}
+              </button> : null
+          }
 
           <button
             type="button"
             className="btn btn-light"
-            onClick={() => this.reset()}>RESET</button>
+            onClick={() => this.reset()}
+          >RESET</button>
         </div>
       </form>
     )

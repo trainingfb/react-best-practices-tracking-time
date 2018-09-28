@@ -11,8 +11,6 @@ const Activities = props => {
 
   return (<div>
     {props.tasks.map(task => {
-
-
       return (
           <ActivityItem
             key={task.id}
