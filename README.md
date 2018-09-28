@@ -46,38 +46,38 @@
 
 WRONG:
 
--- 📁 components
-    -- 📄 Card.jsx
-    -- 📄 Catalog.jsx
-    -- 📄 NavBar.jsx
-    -- 📄 Users.jsx
--- 📁 services
--- 📁 containers
--- 📁 actions
--- 📁 reducers
+* 📁 components
+    * 📄 Card.jsx
+    * 📄 Catalog.jsx
+    * 📄 NavBar.jsx
+    * 📄 Users.jsx
+* 📁 services
+* 📁 containers
+* 📁 actions
+* 📁 reducers
 
 
 GOOD:
 
--- 📁 core
-    -- 📁 components
-        -- 📄 NavBar.jsx
-    -- 📁 services
-        -- 📄 app.settings.js
--- 📁 features
-    -- 📁 users
-        -- 📁 actions
-        -- 📁 components
-        -- 📁 containers
-        -- 📁 reducers
-        -- 📁 selectors
-    -- 📁 catalog
-        -- 📁 actions
-        -- 📁 components
-        -- 📁 containers
-        -- 📁 reducers
-        -- 📁 selectors
--- 📁 shared
-    -- 📁 components
-    -- 📁 services
+* 📁 core
+    * 📁 components
+        * 📄 NavBar.jsx
+    * 📁 services
+        * 📄 app.settings.js
+* 📁 features
+    * 📁 users
+        * 📁 actions
+        * 📁 components
+        * 📁 containers
+        * 📁 reducers
+        * 📁 selectors
+    * 📁 catalog
+        * 📁 actions
+        * 📁 components
+        * 📁 containers
+        * 📁 reducers
+        * 📁 selectors
+* 📁 shared
+    * 📁 components
+    * 📁 services
 
