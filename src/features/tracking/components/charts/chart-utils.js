@@ -1,15 +1,12 @@
 // import { taskConfig } from "../../services/tracking.appSettings";
 
 import { taskConfig } from "../../services";
+import { convertTimeStampToDate } from "../../../../shared/services/date.utils";
 
 export const options = {
   responsive: true,
 };
 
-export const convertTimeStampToDate = ms => {
-  const date = new Date(ms);
-  return `${date.getDate()}/${date.getMonth()}`
-}
 
 /**
  * Receive an array of task and generate an object for PieChart chartJS
@@ -57,6 +54,8 @@ export const getLineData = tasks => {
   }
 };
 
+
+// EXAMPLES of CHARTJS USAGE
 /*
 
 export const getLineDataDefaults = () => ({
