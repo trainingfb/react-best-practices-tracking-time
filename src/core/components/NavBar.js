@@ -21,11 +21,4 @@ const NavBar = () => {
   )
 };
 
-NavBar.propTypes = {
-  config: PropTypes.shape({
-    theme: PropTypes.string,
-  }),
-  setConfig: PropTypes.func
-};
-
 export default NavBar;
