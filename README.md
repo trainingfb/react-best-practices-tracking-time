@@ -1,3 +1,20 @@
+# REACT BEST PRACTICES - SOURCE CODE
+
+## RUN PROJECT
+
+Run the application:
+
+```
+npm run start
+```
+
+Run mock server
+```
+npm run server
+```
+
+---
+
 ## REACT BEST PRACTICES
 
 * Follow naming conventions and best practices
