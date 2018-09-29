@@ -23,8 +23,8 @@ class App extends Component {
         <div>
           <NavBar />
           <div className="container">
-            <Route exact path="/welcome" component={Welcome} />
-            <Route exact path="/tracking" component={Tracking} />
+            <Route path="/welcome" component={Welcome} />
+            <Route path="/tracking" component={Tracking} />
             <Route exact path='' render={() => {
               return <Redirect exact from='/' to='/welcome'/>
             }} />

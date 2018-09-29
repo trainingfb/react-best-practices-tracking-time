@@ -3,7 +3,7 @@
 ## RUN PROJECT
 
 Run the application:
-
+n
 ```
 npm run start
 ```
