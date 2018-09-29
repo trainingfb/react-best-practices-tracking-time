@@ -39,7 +39,7 @@ export async function editTask(task) {
 export async function addTask(task) {
   const params = {
     ...task,
-    creationDate: new Date().valueOf()
+    creationDate: Date.now()
   };
   try {
     const response = await fetch(`${url}/list`, {
