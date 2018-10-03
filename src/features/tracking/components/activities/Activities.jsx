@@ -1,49 +1,55 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { ActivityItem } from "./ActivityItem";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { ActivityItem } from './ActivityItem'
 
 const Activities = props => {
-  const { active: { id } } = props;
+	const {
+		active: { id }
+	} = props
 
-  const deleteItem = (task) =>  {
-    props.onTaskDelete(task)
-  };
+	const deleteItem = task => {
+		props.onTaskDelete(task)
+	}
 
-  return (<div>
-    {props.tasks.map(task => {
-      return (
-          <ActivityItem
-            key={task.id}
-            task={task}
-            onTaskSetActive={(event) => props.onTaskSetActive(task)}
-            onTaskDelete={() => deleteItem(task)}
-            selected={id === task.id}
-          >
-            {task.text} ( {task.id} )
+	return (
+		<div>
+			{props.tasks.length === 0 && <p>No activities to display</p>}
 
-            <i className="fa fa-trash icon pull-right"
-               onClick={(event) => deleteItem(event, task)} />
-          </ActivityItem>
-      )
-    })}
-  </div>);
-};
+			{props.tasks.map(task => {
+				return (
+					<ActivityItem
+						key={task.id}
+						task={task}
+						onTaskSetActive={event => props.onTaskSetActive(task)}
+						onTaskDelete={() => deleteItem(task)}
+						selected={id === task.id}
+					>
+						{task.text} ( {task.id} )
+						<i className="fa fa-trash icon pull-right" onClick={event => deleteItem(event, task)} />
+					</ActivityItem>
+				)
+			})}
+		</div>
+	)
+}
 
-export default Activities;
+export default Activities
 
 Activities.propTypes = {
-  active: PropTypes.shape({
-    id: PropTypes.number,
-    text: PropTypes.string,
-    creationDate: PropTypes.number,
-    type: PropTypes.string
-  }),
-  tasks: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.number,
-    text: PropTypes.string,
-    creationDate: PropTypes.number,
-    type: PropTypes.string
-  })),
-  onTaskDelete: PropTypes.func,
-  onTaskSetActive: PropTypes.func
-};
+	active: PropTypes.shape({
+		id: PropTypes.number,
+		text: PropTypes.string,
+		creationDate: PropTypes.number,
+		type: PropTypes.string
+	}),
+	tasks: PropTypes.arrayOf(
+		PropTypes.shape({
+			id: PropTypes.number,
+			text: PropTypes.string,
+			creationDate: PropTypes.number,
+			type: PropTypes.string
+		})
+	),
+	onTaskDelete: PropTypes.func,
+	onTaskSetActive: PropTypes.func
+}
