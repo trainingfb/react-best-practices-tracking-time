@@ -42,7 +42,8 @@ export default class TrackingContainer extends React.Component {
     this.setState(state => {
       return {
         tasks: [...this.state.tasks, data],
-        active: INITIAL_ACTIVE_STATE, error
+        active: INITIAL_ACTIVE_STATE,
+        error
       }
     })
 	}
