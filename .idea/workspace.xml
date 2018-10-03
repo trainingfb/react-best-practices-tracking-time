@@ -37,6 +37,15 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/README.md">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="222">
+                  <caret line="35" column="24" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="TrackingContainer.jsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/features/tracking/TrackingContainer.jsx">
               <provider selected="true" editor-type-id="text-editor">
@@ -46,7 +55,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+          <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/package.json">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="85">
@@ -73,11 +82,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Card.jsx" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Card.jsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/shared/components/Card.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="644">
-                  <caret line="23" selection-start-line="23" selection-end-line="23" />
+                <state relative-caret-position="280">
+                  <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -205,12 +214,12 @@
         <option value="$PROJECT_DIR$/src/features/tracking/components/charts/chart-utils.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/features/tracking/services/tracking.service.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/core/components/NavBar.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/core/components/index.js" />
         <option value="$PROJECT_DIR$/src/shared/components/Card.jsx" />
         <option value="$PROJECT_DIR$/src/features/tracking/components/charts/Charts.jsx" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -363,7 +372,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="card&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/shared/components/Card.jsx&#10;pac&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/package.json&#10;packa&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/package.json&#10;app&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/App.js&#10;app.&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/App.js&#10;avbar&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/core/components/NavBar.js&#10;db.js&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/server/db.json&#10;tracking&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/features/tracking/services/tracking.service.js&#10;adda&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/features/tracking/components/form-activity/AddActivity.jsx&#10;index&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/index.js&#10;icon.&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/shared/components/Icon.jsx&#10;tracki&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/features/tracking/TrackingContainer.jsx&#10;trackingo&#9;null&#9;null&#10;ard&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/shared/components/card.jsx&#10;hartut&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/features/tracking/components/charts/chart-utils.js&#10;icon&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/shared/components/Icon.jsx&#10;navbar&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/shared/core/NavBar.js&#10;db&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/server/db.json&#10;index.&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/index.js" />
+    <property name="SearchEverywhereHistoryKey" value="pack&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/package.json&#10;read&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/README.md&#10;card&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/shared/components/Card.jsx&#10;pac&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/package.json&#10;packa&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/package.json&#10;app&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/App.js&#10;app.&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/App.js&#10;avbar&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/core/components/NavBar.js&#10;db.js&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/server/db.json&#10;tracking&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/features/tracking/services/tracking.service.js&#10;adda&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/features/tracking/components/form-activity/AddActivity.jsx&#10;index&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/index.js&#10;icon.&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/shared/components/Icon.jsx&#10;tracki&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/features/tracking/TrackingContainer.jsx&#10;trackingo&#9;null&#9;null&#10;ard&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/shared/components/card.jsx&#10;hartut&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/features/tracking/components/charts/chart-utils.js&#10;icon&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/shared/components/Icon.jsx&#10;navbar&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/shared/core/NavBar.js&#10;db&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/server/db.json&#10;index.&#9;FILE&#9;file:///Users/fabio/Documents/training/corsi-2018/react/react-best-practices/src/index.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="$USER_HOME$/.nvm/versions/node/v6.3.0/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -410,7 +419,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1057" width="1920" height="1057" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="3" sideWeight="0.4979716" visible="true" weight="0.21119325" />
       <window_info anchor="bottom" id="TODO" order="9" />
@@ -622,13 +630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -740,13 +741,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/features/tracking/TrackingView.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -782,17 +776,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shared/components/Card.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/features/tracking/components/charts/Charts.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/components/Card.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="35" column="24" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
