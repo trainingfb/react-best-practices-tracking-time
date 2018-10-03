@@ -18,12 +18,7 @@ const Card = props => {
 
 Card.propTypes = {
   title: PropTypes.string,
-  col: PropTypes.number,
   children: PropTypes.element.isRequired
-};
-
-Card.defaultProps = {
-  col: 12
 };
 
 export default Card;
