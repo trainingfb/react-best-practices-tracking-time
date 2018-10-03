@@ -1,14 +1,16 @@
 import React from 'react'
-import WithTracking from './WithTracking'
+import Tracking from './Tracking'
 
-const TrackingList = ({ tasks }) => (
-	<div>
-		<ul>
-			{tasks.map(task => (
-				<li key={task.id}>{task.text}</li>
-			))}
-		</ul>
-	</div>
+const TrackingList = () => (
+	<Tracking>
+		{({ tasks }) => (
+			<ul>
+				{tasks.map(task => (
+					<li key={task.id}>{task.text}</li>
+				))}
+			</ul>
+		)}
+	</Tracking>
 )
 
-export default WithTracking(TrackingList)
+export default TrackingList
