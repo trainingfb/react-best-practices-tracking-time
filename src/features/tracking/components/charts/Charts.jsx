@@ -1,7 +1,7 @@
 import React from 'react';
 import { getLineData, getPieData, options } from "./chart-utils";
-const PieChart = require("react-chartjs").Pie;
-const LineChart = require("react-chartjs").Line;
+import { Line as LineChart } from "react-chartjs";
+import { Pie as PieChart } from "react-chartjs";
 
 const Charts = props => {
 
