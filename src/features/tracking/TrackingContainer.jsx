@@ -11,7 +11,7 @@ export const INITIAL_ACTIVE_STATE = {
 
 export default class TrackingContainer extends React.Component {
 	constructor() {
-		super()
+		super();
 		this.state = { active: INITIAL_ACTIVE_STATE, tasks: [], error: null }
 	}
 
@@ -89,16 +89,17 @@ export default class TrackingContainer extends React.Component {
 	}
 
 	render() {
+		const { error } = this.state;
 		return (
 			<div>
-				<TrackingView
+				{!error ? <TrackingView
 					active={this.state.active}
 					tasks={this.state.tasks}
 					onTaskSave={newItem => this.saveTask(newItem)}
 					onTaskDelete={item => this.deleteTask(item)}
 					onTaskSetActive={item => this.setActive(item)}
 					onTaskReset={() => this.reset()}
-				/>
+				/> : 'no data'}
 			</div>
 		)
 	}
