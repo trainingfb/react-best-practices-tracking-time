@@ -1,5 +1,5 @@
-import { iconConfig } from "../../services";
 import { convertTimeStampToDate } from "../../../../shared/services/date.utils";
+import { iconConfig } from "../../../../shared/components/icon.config";
 
 export const options = { responsive: true };
 
