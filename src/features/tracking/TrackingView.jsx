@@ -29,15 +29,17 @@ TrackingView.propTypes = {
   active: PropTypes.shape({
     id: PropTypes.number,
     text: PropTypes.string,
-    date: PropTypes.string,
-    time: PropTypes.number
+    creationDate: PropTypes.number,
+    duration: PropTypes.number,
+    type: PropTypes.string
   }),
   tasks: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number,
       text: PropTypes.string,
-      date: PropTypes.string,
-      time: PropTypes.number
+      creationDate: PropTypes.number,
+      duration: PropTypes.number,
+      type: PropTypes.string
     }).isRequired
   ),
   onTaskSave: PropTypes.func.isRequired,

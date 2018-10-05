@@ -37,17 +37,19 @@ export default Activities
 
 Activities.propTypes = {
 	active: PropTypes.shape({
-		id: PropTypes.number,
-		text: PropTypes.string,
-		creationDate: PropTypes.number,
-		type: PropTypes.string
+    id: PropTypes.number,
+    text: PropTypes.string,
+    creationDate: PropTypes.number,
+    duration: PropTypes.number,
+    type: PropTypes.string
 	}),
 	tasks: PropTypes.arrayOf(
 		PropTypes.shape({
-			id: PropTypes.number,
-			text: PropTypes.string,
-			creationDate: PropTypes.number,
-			type: PropTypes.string
+      id: PropTypes.number,
+      text: PropTypes.string,
+      creationDate: PropTypes.number,
+      duration: PropTypes.number,
+      type: PropTypes.string
 		})
 	),
 	onTaskDelete: PropTypes.func,

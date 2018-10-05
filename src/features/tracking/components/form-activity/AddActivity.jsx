@@ -24,11 +24,12 @@ class AddActivity extends React.Component {
    * @param field String
    */
   onChange(event, field) {
+    const { target: { value, type }} = event;
     const active = {
       ...this.state.active,
-      [field]: event.target.value
+      [field]: type === 'number' ? +value : value
     };
-    this.setState({ active })
+    this.setState({ active });
   }
 
   /**
@@ -118,6 +119,7 @@ AddActivity.propTypes = {
     id: PropTypes.number,
     text: PropTypes.string,
     creationDate: PropTypes.number,
+    duration: PropTypes.number,
     type: PropTypes.string
   }),
   onTaskSave: PropTypes.func.isRequired,

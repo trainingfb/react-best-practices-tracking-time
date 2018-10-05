@@ -45,6 +45,7 @@ ActivityItem.propTypes = {
   task: PropTypes.shape({
     id: PropTypes.number,
     text: PropTypes.string,
+    duration: PropTypes.number,
     creationDate: PropTypes.number,
     type: PropTypes.string
   }),
