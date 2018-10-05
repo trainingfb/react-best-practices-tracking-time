@@ -1,6 +1,6 @@
-// import { taskConfig } from "../../services/tracking.appSettings";
+// import { iconConfig } from "../../services/tracking.appSettings";
 
-import { taskConfig } from "../../services";
+import { iconConfig } from "../../services";
 import { convertTimeStampToDate } from "../../../../shared/services/date.utils";
 
 export const options = {
@@ -18,7 +18,7 @@ export const getPieData = tasks => {
   for (let i = 0; i < tasks.length; i++) {
     let label = tasks[i].type || 'not assigned';
     let value = extract[label] ? extract[label].value += 1 : 1;
-    extract[label] = { label, value, ...taskConfig[label] }
+    extract[label] = { label, value, ...iconConfig[label] }
   }
   return Object.values(extract)
 };

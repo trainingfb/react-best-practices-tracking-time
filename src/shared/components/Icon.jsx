@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { taskConfig } from "../../features/tracking/services/task.config";
+import { iconConfig } from "./icon.config";
 
 const Icon = props => {
-  const icon = taskConfig[props.type] ? taskConfig[props.type].icon : null;
+  const icon = iconConfig[props.type] ? iconConfig[props.type].icon : null;
   return (
     <i className={icon} />
   )
