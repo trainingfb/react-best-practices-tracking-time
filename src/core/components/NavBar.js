@@ -5,8 +5,7 @@ import { NavLink } from 'react-router-dom';
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand navbar-dark bg-dark text-white mb-2">
-      <NavLink className="navbar-brand"
-         to="/welcome" activeClassName="text-warning">
+      <NavLink className="navbar-brand" to="/welcome">
         <i className="fa fa-clock-o" /> TRACKING TIME
       </NavLink>
       <div className="navbar-collapse collapse">
