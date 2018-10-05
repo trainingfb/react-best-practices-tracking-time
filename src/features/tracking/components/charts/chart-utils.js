@@ -1,12 +1,7 @@
-// import { iconConfig } from "../../services/tracking.appSettings";
-
 import { iconConfig } from "../../services";
 import { convertTimeStampToDate } from "../../../../shared/services/date.utils";
 
-export const options = {
-  responsive: true,
-};
-
+export const options = { responsive: true };
 
 /**
  * Receive an array of task and generate an object for PieChart chartJS
