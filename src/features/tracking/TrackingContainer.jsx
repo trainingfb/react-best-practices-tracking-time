@@ -1,12 +1,10 @@
 import * as React from 'react'
 import TrackingView from './TrackingView'
-import { connect } from 'react-redux'
-import { saveTask, removeTask, getTasks } from './sources/tracking.effects'
-import { reset, setActive } from './sources/tracking.action-creators'
+import withTracking from './connectors/tracking.connector'
 
 class TrackingContainer extends React.Component {
 	componentDidMount() {
-		this.props.dispatch(getTasks())
+		this.props.getTasks()
 	}
 
 	render() {
@@ -15,20 +13,14 @@ class TrackingContainer extends React.Component {
 				<TrackingView
 					active={this.props.active}
 					tasks={this.props.tasks}
-					onTaskSave={newItem => this.props.dispatch(saveTask(newItem))}
-					onTaskDelete={item => this.props.dispatch(removeTask(item))}
-					onTaskSetActive={item => this.props.dispatch(setActive(item))}
-					onTaskReset={() => this.props.dispatch(reset())}
+					onTaskSave={newItem => this.props.saveTask(newItem)}
+					onTaskDelete={item => this.props.removeTask(item)}
+					onTaskSetActive={item => this.props.setActive(item)}
+					onTaskReset={() => this.props.reset()}
 				/>
 			</div>
 		)
 	}
 }
-
-const withTracking = connect(state => {
-	return {
-		...state.tracking
-	}
-})
 
 export default withTracking(TrackingContainer)
