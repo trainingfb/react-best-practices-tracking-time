@@ -6,28 +6,23 @@ import { Activities } from './components/activities'
 import { Charts } from './components/charts'
 // shared
 import { Card } from '../../shared/components'
-import Tracking from './Tracking'
 
 // Tracking View
 const TrackingView = props => (
-	<Tracking>
-		{trackingData => (
-			<div className="row">
-				<div className="col-sm-7">
-					<Card>
-						<AddActivity {...trackingData} />
-					</Card>
-					<hr />
-					<Card title="Activities">
-						<Activities {...trackingData} />
-					</Card>
-				</div>
-				<div className="col-sm-5">
-					<Charts />
-				</div>
-			</div>
-		)}
-	</Tracking>
+	<div className="row">
+		<div className="col-sm-7">
+			<Card>
+				<AddActivity {...props} />
+			</Card>
+			<hr />
+			<Card title="Activities">
+				<Activities {...props} />
+			</Card>
+		</div>
+		<div className="col-sm-5">
+			<Charts {...props} />
+		</div>
+	</div>
 )
 
 export default TrackingView
