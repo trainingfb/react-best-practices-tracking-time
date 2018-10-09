@@ -36,17 +36,27 @@ TrackingView.propTypes = {
 	active: PropTypes.shape({
 		id: PropTypes.number,
 		text: PropTypes.string,
+<<<<<<< HEAD
 		creationDate: PropTypes.number,
 		duration: PropTypes.number,
 		type: PropTypes.string
+=======
+		date: PropTypes.string,
+		time: PropTypes.number
+>>>>>>> df6ee88477541092fd5a3d28536b5e7ada0f1d88
 	}),
 	tasks: PropTypes.arrayOf(
 		PropTypes.shape({
 			id: PropTypes.number,
 			text: PropTypes.string,
+<<<<<<< HEAD
 			creationDate: PropTypes.number,
 			duration: PropTypes.number,
 			type: PropTypes.string
+=======
+			date: PropTypes.string,
+			time: PropTypes.number
+>>>>>>> df6ee88477541092fd5a3d28536b5e7ada0f1d88
 		}).isRequired
 	),
 	onTaskSave: PropTypes.func.isRequired,
