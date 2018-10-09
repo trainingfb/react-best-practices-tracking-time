@@ -3,11 +3,7 @@ import { saveTask, removeTask, getTasks } from '../sources/tracking.effects'
 import { reset, setActive } from '../sources/tracking.action-creators'
 
 const withTracking = connect(
-	state => {
-		return {
-			...state.tracking
-		}
-	},
+	state => state.tracking,
 	{
 		saveTask,
 		removeTask,
