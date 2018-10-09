@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 // feature components
-import { AddActivity } from './components/form-activity'
+import { AddActivity } from './components/add-activity'
 import { Activities } from './components/activities'
 import { Charts } from './components/charts'
 // shared
