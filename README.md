@@ -1,6 +1,6 @@
 # REACT BEST PRACTICES - Training Source code
 
-#### TRACKING TIME Demo project
+#### This is a simple TRACKING TIME Demo project in 3 versions: React Only, by using HoC and with Redux
 
 
 ## HOW TO RUN THE PROJECT:
