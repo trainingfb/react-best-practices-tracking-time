@@ -1,3 +1,9 @@
+/*
+	! DO NOT USE THIS AT HOME !
+	This is just a simple global state container, used to avoid
+	adding a state manager or using the context API at this stage.
+*/
+
 class TrackingStore {
 	constructor() {
 		this.tasks = []
