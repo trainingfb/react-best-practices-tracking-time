@@ -32,7 +32,7 @@ const Activities = props => {
 			})}
 		</div>
 	)
-}
+};
 
 export default Activities
 
