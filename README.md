@@ -1,4 +1,4 @@
-# REACT BEST PRACTICES - SOURCE CODE
+# REACT BEST PRACTICES - TRACKING TIME SOURCE CODE
 
 ## RUN PROJECT
 
@@ -13,9 +13,17 @@ npm run start
 npm run server
 ```
 
+## BRANCHES
+
+This project contains three branches:
+
+* 'master': React only with stateful parent component
+* 'composition': state handled by an Higher Order Component
+* 'redux': demo with Redux
+
 ---
 
-## REACT BEST PRACTICES
+## REACT BEST PRACTICES: summary
 
 * Follow naming conventions and best practices
     * Folders: kebab-case
@@ -56,6 +64,7 @@ npm run server
 ### PROJECT ORGANIZATION
 
 * organize your files by feature. Avoid organization by functions
+* Folder names inspired by Angular best practices
 * Use Ducks File Structure
     * [Ducks: Redux Reducer Bundles](https://github.com/erikras/ducks-modular-redux)
     * [Scaling your Redux App with ducks](https://medium.freecodecamp.org/scaling-your-redux-app-with-ducks-6115955638be)
@@ -64,7 +73,7 @@ npm run server
 WRONG:
 
 * 📁 components
-    * 📄 Cardjsx
+    * 📄 Card.jsx
     * 📄 Catalog.jsx
     * 📄 NavBar.jsx
     * 📄 Users.jsx
