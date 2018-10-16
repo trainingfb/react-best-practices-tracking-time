@@ -2,13 +2,13 @@
 
 ## RUN PROJECT
 
-Run the application:
+1) Run the client:
 
 ```
 npm run start
 ```
 
-Run mock server
+2) Run mock server
 ```
 npm run server
 ```
@@ -64,7 +64,7 @@ npm run server
 WRONG:
 
 * 📁 components
-    * 📄 Card.jsx
+    * 📄 Cardjsx
     * 📄 Catalog.jsx
     * 📄 NavBar.jsx
     * 📄 Users.jsx
