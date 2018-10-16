@@ -1,6 +1,9 @@
-# REACT BEST PRACTICES - TRACKING TIME SOURCE CODE
+# REACT BEST PRACTICES - Training Source code
 
-## RUN PROJECT
+#### TRACKING TIME Demo project
+
+
+## HOW TO RUN THE PROJECT:
 
 1) Run the client:
 
@@ -17,9 +20,9 @@ npm run server
 
 This project contains three branches:
 
-* 'master': React only with stateful parent component
-* 'composition': state handled by an Higher Order Component
-* 'redux': demo with Redux
+* `master`: React only with stateful parent component
+* `composition`: state handled by an Higher Order Component
+* `redux`: demo with Redux
 
 ---
 
