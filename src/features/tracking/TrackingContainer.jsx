@@ -7,7 +7,7 @@ export const INITIAL_ACTIVE_STATE = {
 	creationDate: null,
 	duration: 0,
 	type: ''
-}
+};
 
 export default class TrackingContainer extends React.Component {
 	constructor() {
@@ -24,20 +24,20 @@ export default class TrackingContainer extends React.Component {
 	 * Save Task (add / edit)
 	 * @param item
 	 */
-	saveTask(item) {
+	saveTask = async (item) => {
 		if (item.id) {
 			this.editTask(item)
 		} else {
 			this.addTask(item)
 		}
-	}
+	};
 
 	/**
 	 * Add new Task
 	 * @param task
 	 * @returns {Promise<void>}
 	 */
-	async addTask(task) {
+	addTask = async (task) => {
 		const { error, data } = await addTask(task);
     this.setState(state => {
       return {
@@ -46,14 +46,14 @@ export default class TrackingContainer extends React.Component {
         error
       }
     })
-	}
+	};
 
 	/**
 	 * Edit task
 	 * @param task
 	 * @returns {Promise<void>}
 	 */
-	async editTask(task) {
+	editTask = async (task) => {
 		const { error, data } = await editTask(task);
 		this.setState(state => {
 		  return {
@@ -64,14 +64,14 @@ export default class TrackingContainer extends React.Component {
         error
 		  }
     })
-	}
+	};
 
 	/**
 	 * Delete task
 	 * @param task
 	 * @returns {Promise<void>}
 	 */
-	async deleteTask(task) {
+	deleteTask = async (task) => {
 		const { error } = await deleteTask(task.id);
 		this.setState(state => {
 		  return {
@@ -80,22 +80,22 @@ export default class TrackingContainer extends React.Component {
         error
 		  }
     })
-	}
+	};
 
 	/**
 	 * Set Active Task
 	 * @param item
 	 */
-	setActive(item) {
+	setActive = (item) => {
 		this.setState({ active: item })
-	}
+	};
 
 	/**
 	 * Reset Form
 	 */
-	reset() {
+	reset = () => {
 		this.setState({ active: { ...INITIAL_ACTIVE_STATE } })
-	}
+	};
 
 	render() {
 		const { error } = this.state;
@@ -104,10 +104,10 @@ export default class TrackingContainer extends React.Component {
 				{!error ? <TrackingView
 					active={this.state.active}
 					tasks={this.state.tasks}
-					onTaskSave={newItem => this.saveTask(newItem)}
-					onTaskDelete={item => this.deleteTask(item)}
-					onTaskSetActive={item => this.setActive(item)}
-					onTaskReset={() => this.reset()}
+					onTaskSave={this.saveTask.bind(this)}
+					onTaskDelete={this.deleteTask.bind(this)}
+					onTaskSetActive={this.setActive}
+					onTaskReset={this.reset.bind(this)}
 				/> : 'no data'}
 			</div>
 		)

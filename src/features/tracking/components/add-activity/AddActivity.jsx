@@ -24,10 +24,10 @@ class AddActivity extends React.Component {
    * @param field String
    */
   onChange(event, field) {
-    const { target: { value, type }} = event;
+    const { target: { name, type, value }} = event;
     const active = {
       ...this.state.active,
-      [field]: type === 'number' ? +value : value
+      [name]: type === 'number' ? +value : value
     };
     this.setState({ active });
   }
@@ -41,30 +41,23 @@ class AddActivity extends React.Component {
     this.props.onTaskSave(this.state.active);
   };
 
-  /**
-   * Reset Form
-   */
-  reset() {
-    this.props.onTaskReset();
-  }
-
   render() {
     const { active: { id, text, type = '', duration = 0} } = this.state;
     const label = id ? 'EDIT' : 'ADD';
-    const valid = this.state.active.text ? true : false;
+    const valid = text.length > 2;
 
     return (
       <form
         noValidate
-        onSubmit={(e) => this.submit(e)}
+        onSubmit={this.submit.bind(this)}
       >
         <input
           type="text"
           name="text"
           className="form-control mb-1"
-          placeholder="Activity Description"
+          placeholder="Activity Description (min 3 chars)"
           value={text}
-          onChange={(e) => this.onChange(e, 'text')}
+          onChange={this.onChange.bind(this)}
         />
 
         <div className="row mb-1">
@@ -73,7 +66,7 @@ class AddActivity extends React.Component {
               name="type"
               className="form-control"
               value={type}
-              onChange={(e) => this.onChange(e, 'type')}
+              onChange={this.onChange.bind(this)}
             >
               <option value="">nothing</option>
               <option value="meeting">meeting</option>
@@ -88,7 +81,7 @@ class AddActivity extends React.Component {
               className="form-control"
               placeholder="Duration (in minutes)"
               value={duration}
-              onChange={(e) => this.onChange(e, 'duration')}
+              onChange={this.onChange.bind(this)}
             />
           </div>
         </div>
@@ -104,7 +97,7 @@ class AddActivity extends React.Component {
           <button
             type="button"
             className="btn btn-light"
-            onClick={() => this.reset()}
+            onClick={this.props.onTaskReset}
           >RESET</button>
         </div>
       </form>

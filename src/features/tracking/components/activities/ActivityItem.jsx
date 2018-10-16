@@ -33,7 +33,10 @@ export const ActivityItem = (props) => {
         {/*Duration*/}
         { duration ? <span>{duration}m </span> : 'no time '}
         {/*Delete Icon*/}
-        <i className="fa fa-trash icon" onClick={(event) => deleteTask(event)} />
+        <i
+          className="fa fa-trash icon"
+          onClick={deleteTask}
+        />
       </div>
     </li>
   )

@@ -5,11 +5,15 @@ import { ActivityItem } from './ActivityItem'
 const Activities = props => {
 	const {
 		active: { id }
-	} = props
+	} = props;
 
 	const deleteItem = task => {
-		props.onTaskDelete(task)
-	}
+		props.onTaskDelete(task);
+	};
+
+	const setActive = task => {
+    props.onTaskSetActive(task);
+	};
 
 	return (
 		<div>
@@ -20,13 +24,10 @@ const Activities = props => {
 					<ActivityItem
 						key={task.id}
 						task={task}
-						onTaskSetActive={event => props.onTaskSetActive(task)}
-						onTaskDelete={() => deleteItem(task)}
+						onTaskSetActive={setActive.bind(this, task)}
+						onTaskDelete={deleteItem.bind(this, task)}
 						selected={id === task.id}
-					>
-						{task.text} ( {task.id} )
-						<i className="fa fa-trash icon pull-right" onClick={event => deleteItem(event, task)} />
-					</ActivityItem>
+					/>
 				)
 			})}
 		</div>

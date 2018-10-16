@@ -13,8 +13,8 @@ const Charts = props => {
 	}
 
 	// generate chart data
-	const lineData = getLineData(props.data)
-	const pieData = getPieData(props.data)
+	const lineData = getLineData(props.data);
+	const pieData = getPieData(props.data);
 
 	return (
 		<div className="text-center">
@@ -25,5 +25,5 @@ const Charts = props => {
 			<PieChart height="200" data={pieData} options={options} />
 		</div>
 	)
-}
+};
 export default Charts
